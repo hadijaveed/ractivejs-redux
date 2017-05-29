@@ -1,0 +1,48 @@
+{{# showModal}}
+    <div class="overlay" on-click="hideModal"></div>
+    <div class="modal">
+        <div class="container">
+            <p>cool stuff</p>
+        </div>
+    </div>
+{{/}}
+<!-- <div class="container">
+    {{#with task}}
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    <p class="title">{{title}}</p>
+    <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+    <input class='edit-title' name='edit-title' type='text' value='{{title}}'></input>
+    <div class="clearfix"></div>
+    <div class="attributes-wrapper">
+        <div class="description">
+            <div class="comments-wrapper">
+                <i class='fa fa-comment' aria-hidden='true'></i>
+                <p class="comment-title">Comments</p>
+                <textarea class='comment-box' name='comment-val' placeholder="Write Comment ..."></textarea>
+                <a href="#" class='add-comment' name='comment-add'>Add</a>
+                <div class="all-comments">
+                    {{#each comments}}
+                    <div class="comment">
+                        <p class="comment-title">{{this}}</p>
+                    </div>
+                    {{/each}}
+                </div>
+
+            </div>
+        </div>
+        {{/with}}
+        <div class="labels">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <p class="label-heading">Labels</p>
+            <div class="labels-wrapper">
+                {{#each allLabels}}
+                <div class="label-bar" name='set-label' data-color='{{this}}' style="background-color: {{this}};">
+                    {{#if (taskHasLabel this)}}
+                    <i class="fa fa-check" aria-hidden="true"></i> {{/if}}
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+</div> -->

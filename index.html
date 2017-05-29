@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ractive Example</title>
+    </head>
+    <body>
+        <h2 class='task-heading'>Your Tasks</h2>
+
+        <div class="mount"></div>
+
+        <script id="tpl" type="text/html">
+            <Tasks
+                taskStore="{{ Store.getState() }}"
+                dispatcher="{{ Store.dispatch }}"
+            />
+        </script>
+
+        <script src="bundle.js"></script>
+    </body>
+</html>

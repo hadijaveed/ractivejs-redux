@@ -1,0 +1,14 @@
+<div class='task-card' on-click="openTask">
+    <div class='task-container'>
+        {{#each task.labels}}
+            <div class='task-label' style='background: {{this}};'></div>
+        {{/each}}
+        <p>{{task.title}}</p>
+        <div class='task-notifications'>
+            {{# task.comments.length }}
+                <i class='fa fa-comment' aria-hidden='true'></i>
+                <p class='comments-number'>lenght</p>
+            {{/}}
+        </div>
+    </div>
+</div>

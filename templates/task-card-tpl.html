@@ -1,0 +1,15 @@
+<div class='card-list'>
+    {{#each taskStore.tasks}}
+        <TaskCard
+            task="{{this}}"
+            showTask="{{showTask}}"
+        />
+    {{/each}}
+    <a role="button" class='add-new-card' name='addCard'>Add a Card</a>
+    <textarea class='newCard-title' name='card-title' placeholder="Title.."></textarea>
+</div>
+
+<TaskDetail
+    showModal="{{taskStore.showDetail}}"
+    hideTaskDetail="{{hideTaskDetail}}"
+/>
